@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
+
+body{
+    font-family: system-ui,'Open Sans', 'Poppins';
+}
+
+#logo{
+    font-size: 20px;
+}
+
+#navbar{
+    margin-right: 60px;
+}
+
+.nav .aktif{
+    font-weight: bold;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+table{
+    width: 100%;
+}
+
+.zoom-img{
+    transition: transform .2s;
+}
+
+.zoom-img:hover{
+    transform: scale(1.2);
+}
+
+/* Menghapus style box-shadow bawaan bootstrap*/
+
+input[type=checkbox]{
+    border: 1px solid grey;
+}
+
+input[type=checkbox]:focus{
+    box-shadow: none;
+}
+
+input[type=text]{
+    border: 2px solid grey;
+}
+
+input[type=text]:focus, input[type=file]:focus{
+    box-shadow: none;
+    border: 2px solid black;
+}
+
+textarea{
+    resize: none;
+    border: 2px solid grey !important;
+}
+
+textarea:focus{
+    box-shadow: none !important;
+    border: 2px solid black !important;
+}
+
+@media only screen and (max-width: 640px){
+    table{
+        margin-left: -4px;
+    }
+}
